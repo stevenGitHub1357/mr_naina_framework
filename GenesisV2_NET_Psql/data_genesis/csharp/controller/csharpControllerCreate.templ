@@ -1,0 +1,9 @@
+public async Task<IActionResult> CreateNew([controllerMethodParameter]) {
+
+                [classNameMaj] o = new [classNameMaj]();
+                [controllerChangeInstanciation]
+                _context.Add(o);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+
+        }
